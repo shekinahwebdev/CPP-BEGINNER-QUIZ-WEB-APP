@@ -563,7 +563,7 @@ p {
   }
 
   .welcome-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .features {
@@ -623,5 +623,8 @@ p {
   .popup-container {
     width: 100%;
     max-width: 800px;
+  }
+  .welcome-title {
+    font-size: 2rem;
   }
 }
