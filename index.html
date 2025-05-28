@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>C++ Quiz App</title>
+  </head>
+  <body>
+    <!-- Quiz Welcome Open Page -->
+    <main class="quiz-welcome-page">
+      <header class="quiz-header">
+        <div class="logo-container">
+          <img src="assests/code.png" alt="Quiz Logo" class="logo-img" />
+          <h1 class="app-title">C++ Quiz App</h1>
+        </div>
+
+        <nav class="main-nav">
+          <ul class="nav-menu">
+            <li>
+              <a href="./index.html" data-replace="Home"><span>Home</span></a>
+            </li>
+            <li>
+              <a href="./about.html" data-replace="About"><span>About</span></a>
+            </li>
+            <li>
+              <a href="./leadership.html" data-replace="Leadership"
+                ><span>Leadership</span></a
+              >
+            </li>
+            <li>
+              <a href="./contact.html" data-replace="Contact"
+                ><span>Contact</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="auth-container">
+          <button class="sign-in-btn">Sign In</button>
+        </div>
+      </header>
+
+      <section class="welcome-section">
+        <div class="intro">
+          <img
+            src="assests/coding.png"
+            alt="Quiz Illustration"
+            class="coding-img"
+          />
+          <h1 class="welcome-title">Welcome to the Ultimate C++ Quiz</h1>
+          <p class="welcome-description">
+            Sharpen your C++ skills, challenge your friends, and climb the
+            leaderboard. Every question brings you closer to mastery!
+          </p>
+        </div>
+
+        <div class="features">
+          <div class="feature-item questions">
+            <img
+              src="assests/brain.png"
+              alt="Questions Icon"
+              class="features-icon"
+            />
+            <h3>Varied Questions</h3>
+            <p>
+              From basics to advanced topics, test your C++ knowledge across
+              diverse categories.
+            </p>
+          </div>
+          <div class="feature-item leaderboard">
+            <img
+              src="assests/trophy.png"
+              alt="Leaderboard Icon"
+              class="features-icon"
+            />
+            <h3>Leaderboard Challenges</h3>
+            <p>Compete with others and see how you rank on the leaderboard.</p>
+          </div>
+          <div class="feature-item progress">
+            <img
+              src="assests/flash.png"
+              alt="Analytics Icon"
+              class="features-icon"
+            />
+            <h3>Track Your Progress</h3>
+            <p>
+              Review your scores and improve with detailed performance
+              analytics.
+            </p>
+          </div>
+        </div>
+
+        <div class="cta-container">
+          <button class="start-quiz-btn">Start Quiz</button>
+          <p class="login-prompt">
+            No account needed! Or <span class="sign-in-link">Sign In</span> to
+            track your progress.
+          </p>
+        </div>
+      </section>
+
+      <!-- Quiz PopUp Container -->
+      <section
+        class="popup-container"
+        role="dialog"
+        aria-labelledby="quiz-title"
+      >
+        <header class="popup-header">
+          <div class="header-content">
+            <h1 class="quiz-title">Practice C++ Quiz</h1>
+            <p>Sharpen your C++ skills with interactive questions!</p>
+          </div>
+          <div class="timer-container">
+            <img src="assests/time.png" alt="Timer Icon" class="timer-icon" />
+            <p class="timer">00:00</p>
+          </div>
+        </header>
+
+        <div class="quiz-status">
+          <div class="status-info">
+            <p class="question-count">Question <b>0</b> of 20</p>
+            <p class="score">Score: <span class="score-counts">0</span></p>
+          </div>
+          <div class="progress-bar-container">
+            <div class="progress-bar run"></div>
+          </div>
+        </div>
+
+        <div class="quiz-question">
+          <h2>C++ QUESTION</h2>
+          <p class="question-text">What is the output of the following code?</p>
+
+          <pre class="code-block"><code>
+  #include &lt;iostream&gt;
+  using namespace std;
+  int main() {
+      int a = 5;
+      cout &lt;&lt; ++a;
+      return 0;
+  } 
+      </code></pre>
+
+          <ul class="answer-options">
+            <li class="answer-option" data-answer="A">A. 5</li>
+            <li class="answer-option" data-answer="B">B. 6</li>
+            <li class="answer-option" data-answer="C">C. 7</li>
+            <li class="answer-option" data-answer="D">D. Error</li>
+          </ul>
+        </div>
+
+        <footer class="quiz-footer">
+          <button class="previous btn">
+            <img
+              src="assests/arrow-left.png"
+              alt="Previous Question"
+              class="arrow-icon"
+            />
+            Previous
+          </button>
+          <button class="next btn">
+            Next
+            <img
+              src="assests/right-arrow-2.png"
+              alt="Next Question"
+              class="arrow-icon"
+            />
+          </button>
+        </footer>
+      </section>
+
+      <!-- Quiz Result Container -->
+      <!-- Quiz Result Container -->
+      <section class="overlay">
+        <div class="result-popup">
+          <img src="assests/trophy.png" alt="Trophy" class="trophy-icon" />
+
+          <p class="completed">Quiz Completed!</p>
+          <p class="result-declaration">
+            Here are your results for the C++ Basics Quiz
+          </p>
+
+          <div class="quiz-box">
+            <div class="header-box">
+              <p>Score</p>
+              <img src="assests/star.png" alt="Star" class="star-icon" />
+            </div>
+            <p class="marks">0/20</p>
+            <p class="response"></p>
+          </div>
+
+          <div class="result-summary">
+            <div class="summary-item">
+              <p class="correct">Correct</p>
+              <p class="correct-scores">0</p>
+            </div>
+            <div class="summary-item">
+              <p class="incorrect">Incorrect</p>
+              <p class="incorrect-scores">0</p>
+            </div>
+            <div class="summary-item">
+              <p class="time">Time</p>
+              <p class="total-time">04:35</p>
+            </div>
+          </div>
+
+          <button class="retake-quiz-btn">Retake Quiz</button>
+        </div>
+      </section>
+
+      <footer class="main-footer">
+        <div class="logo-container">
+          <img src="assests/code.png" alt="Quiz Logo" class="logo-img" />
+          <h1 class="app-title">C++ Quiz</h1>
+        </div>
+
+        <div class="footer-nav">
+          <ul>
+            <li>
+              <a href="#" class="icon-link">
+                <img src="assests/facebook-3.png" alt="Facebook" class="icon" />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-link">
+                <img
+                  src="assests/instagram-2.png"
+                  alt="Instagram"
+                  class="icon"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#" class="icon-link">
+                <img src="assests/linkedin-3.png" alt="LinkedIn" class="icon" />
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p>&copy; 2025 C++ Quiz App. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <script src="javascript/questions.js"></script>
+    <script src="javascript/main.js"></script>
+  </body>
+</html>
