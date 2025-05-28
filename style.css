@@ -550,7 +550,7 @@ p {
   color: white;
 }
 
-@media screen and (min-width: 350px) {
+@media screen and (min-width: 290px) {
   .popup-container {
     max-width: 500px;
   }
